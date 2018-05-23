@@ -15,7 +15,7 @@ class Home:Fragment(){
             val fragment = fragmentManager.beginTransaction()
             fragment.remove(Fragment())
             fragment.replace(R.id.frag,WebApp())
-            
+
             fragment.commit()
         }
         return view
