@@ -1,5 +1,6 @@
 package com.example.ayushgupta.ktmy5
 
+import android.app.Fragment
 import android.app.FragmentManager
 import android.app.FragmentTransaction
 import android.support.v7.app.AppCompatActivity
@@ -18,29 +19,30 @@ class MainActivity : AppCompatActivity() {
 
         when(v.id){
             R.id.btn1->{
+                fragment.remove(Fragment())
                 fragment.replace(R.id.frag,Home())
-                fragment.commit()
             }
             R.id.btn2->{
+                fragment.remove(Fragment())
                 fragment.add(R.id.frag,WebApp())
-                fragment.commit()
             }
             R.id.btn3->{
+                fragment.remove(Fragment())
                 fragment.replace(R.id.frag,FileApp())
-                fragment.commit()
             }
             R.id.btn4->{
+                fragment.remove(Fragment())
                 fragment.add(R.id.frag,WhatsApp())
-                fragment.commit()
             }
             R.id.btn5->{
+                fragment.remove(Fragment())
                 fragment.replace(R.id.frag,Skype())
-                fragment.commit()
             }
             R.id.btn6->{
+                fragment.remove(Fragment())
                 fragment.add(R.id.frag,ThisApp())
-                fragment.commit()
             }
         }
+        fragment.commit()
     }
 }
